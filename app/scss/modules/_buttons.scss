@@ -1,5 +1,4 @@
-.btn{
-	color: red;
-	background: green;
-	padding: 15px 20px;
+.btn-primary{
+	@include button-variant($primary, $primary);
+	color: $white;
 }

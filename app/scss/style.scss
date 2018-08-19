@@ -1,24 +1,4 @@
+@import "modules/_reset.scss";
+@import "modules/_variables.scss";
+@import "bootstrap/_bootstrap.scss";
 @import "modules/_buttons.scss";
-
-@mixin placeholder {
-	::-webkit-input-placeholder { @content; }
-	:-moz-placeholder		    { @content; }
-	::-moz-placeholder		    { @content; }
-	:-ms-input-placeholder	    { @content; }
-}
-
-@include placeholder {
-	color: blue;
-	font-size: 14px;
-}
-
-.input {
-	@include placeholder {
-		color: green;
-	}
-}
-
-body {
-	background-color: blue;
-	color: red;
-}
