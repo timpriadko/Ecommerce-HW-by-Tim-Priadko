@@ -1,0 +1,38 @@
+.btn {
+  color: red;
+  background: green;
+  padding: 15px 20px; }
+
+::-webkit-input-placeholder {
+  color: blue;
+  font-size: 14px; }
+
+:-moz-placeholder {
+  color: blue;
+  font-size: 14px; }
+
+::-moz-placeholder {
+  color: blue;
+  font-size: 14px; }
+
+:-ms-input-placeholder {
+  color: blue;
+  font-size: 14px; }
+
+.input ::-webkit-input-placeholder {
+  color: green; }
+
+.input :-moz-placeholder {
+  color: green; }
+
+.input ::-moz-placeholder {
+  color: green; }
+
+.input :-ms-input-placeholder {
+  color: green; }
+
+body {
+  background-color: blue;
+  color: red; }
+
+/*# sourceMappingURL=style.css.map */
