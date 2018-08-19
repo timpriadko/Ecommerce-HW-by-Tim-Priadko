@@ -50,8 +50,6 @@ gulp.task('watch',['browser-sync', 'sass'], function(){
 	gulp.watch('app/*.js', browserSync.reload);
 });
 
-gulp.task('default', ['watch']);
-
 gulp.task('clean', function () {
 	return del.sync('dist');
 });
@@ -73,3 +71,5 @@ gulp.task('build', ['clean', 'sass'], function() {
 	.pipe(gulp.dest('dist'));
 
 });
+
+gulp.task('default', ['watch']);
