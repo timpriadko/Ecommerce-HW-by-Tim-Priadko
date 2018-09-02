@@ -1,7 +1,17 @@
 .btn-primary{
     @include button-variant($primary, $primary);
+    color: $white;
 }
 
-.btn.secondary {
-	@include button-variant($red, $secondary);
+.bg-light-green {
+        background-color: #f4f6f5;
+}
+
+.btn-white {
+	background-color: $white;
+	color: $gray-900;
+}
+
+.btn-md {
+	padding: 5px 20px;
 }

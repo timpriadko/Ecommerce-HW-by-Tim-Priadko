@@ -2,6 +2,9 @@
 
 $primary: #8bc34a;
 $secondary: #e74c3c;
+$gray-500: #dde3e8;
+$gray-600: #f4f6f5;
+$gray-700: #d4d4d4;
 $gray-900: #707070;
 $gray-800: #b5b5b5;
 $green: #8bc34a;
@@ -9,8 +12,14 @@ $red: #e74c3c;
 $dark: #263238;
 $cyan: #546e7a;
 $orange: #ffa726;
-$dark-blue: #263238;
+$dark-green: #78ad39;
 
+
+//Body
+$body-bg: $gray-600;
+
+//Borders
+$border-color: $gray-500;
 
 // fonts
 
@@ -52,6 +61,10 @@ $spacers: map-merge(
                         4: ($spacer * 1.5),
                         5: ($spacer * 3),
                         6: ($spacer * 4),
+                        15: 15px,
+                        30: 30px,
+                        45: 45px,
+                        110: 110px,
                         120: 120px
                 ),
                 $spacers

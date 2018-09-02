@@ -5,13 +5,33 @@ h1, h2, h3, h4, h5, h6,
   }
 }
 
-h4, .h4{
+h4, .h4 {
   font-weight: $heading-4-font-weight;
 
 }
 
 // link
-
-a{
+a {
   transition: 0.2s;
+}
+
+p:last-of-type {
+	margin-bottom: 0;
+}
+
+.listing {
+	list-style: none;
+	padding-left: 0;
+	margin-bottom: 0;
+	li {
+		font-size: 0.9375rem;
+		color: $dark;
+		& + li {
+			margin-top: 15px;
+		}
+		span {
+			float: right;
+			color: $cyan;
+		}
+	}
 }
