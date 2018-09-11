@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <title>Title</title>
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Title</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content= width=device-width height=device-height user-scalable=no>
 </head>
 <body>
     <div class="page">
@@ -14,7 +16,7 @@
             <div class="top-panel container">
                 <div class="row">
                     <div class="col-md-4">
-                        <a class="navbar-brand" href="#">
+                        <a class="navbar-brand" href="index.html">
                             <img src="img/logo.png" alt="logo">
                         </a>
                     </div>
@@ -216,11 +218,11 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page"><a href="#">Product Page</a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><a href="#">Product Listing</a></li>
                 </ol>
             </nav>
         </div>
-        <section class="pb-45 pb-md-120">
+        <section class="pb-45">
             <div class="container">
                 <div class="row">
                 <!--------------------------- Sidebar --------------------------->
@@ -238,12 +240,11 @@
                         <div class="sidebar-block mt-30">
                             <h4>Price Range</h4>
                             <div class="controls">
-                                <div id="price-range"></div>
-                                <div class="textinputs">
-                                    <input id="price-min" type="text" value="0"/>
-                                    <input id="price-max" type="text" value="1000"/>
+                                <div id="slider-range">
+                                    <div id="custom-handle" class="ui-slider-handle"></div>
+                                    <div id="custom-handle_2" class="ui-slider-handle"></div>
                                 </div>
-                                <a href="#" class="btn btn-primary btn-lg rounded-0 btn-block">
+                                <a href="#" class="btn btn-primary btn-lg rounded-0 btn-block mt-60">
                                 <span class="fa fa-search pr-1"></span>
                                 Search</a>
                             </div>
@@ -255,7 +256,7 @@
                                 <div class="card-body">
                                     <div class="card-body-inner">
                                         <h5 class="card-title">Test post Grid Pro</h5>
-                                            <a class="card-category small" href="#">WordPress Plugin</a>
+                                            <a class="card-category small" href="single-product.html">WordPress Plugin</a>
                                     </div>
                                     <div class="card-price">$20</div>
                                 </div>
@@ -345,7 +346,7 @@
                                    <div class="card-body">
                                        <div class="card-body-inner">
                                            <h5 class="card-title">Test post Grid Pro</h5>
-                                               <a class="card-category small" href="#">WordPress Plugin</a>
+                                               <a class="card-category small" href="single-product.html">WordPress Plugin</a>
                                        </div>
                                        <div class="card-price h4">$20</div>
                                    </div>
@@ -656,9 +657,9 @@
                         <nav aria-label="Page navigation example">
                             <ul class="pagination">
                                 <li class="page-item"><a class="page-link curent-page" href="#">1</a></li>
-                                <li class="page-item"><a class="page-link" href="products-listing-2.html">2</a></li>
-                                <li class="page-item"><a class="page-link" href="products-listing-3.html">3</a></li>
-                                <li class="page-item"><a class="page-link" href="products-listing-4.html">4</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">4</a></li>
                             </ul>
                         </nav>
                     </div>

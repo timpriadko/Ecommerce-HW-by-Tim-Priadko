@@ -16,40 +16,25 @@ function isotope_init() {
 
 // Price Range
 function priceRangeInit() {$( function() {
-	$('#price-range').slider({
-		range: true,
-		min: 0,
-		max: 1000,
-		values: [0, 1000],
-		slide: function(event, ui) {
-			$('#price-min').val(ui.values[0]);
-			$('#price-max').val(ui.values[1]);
-		}
-	});
+	 var handle = $( "#custom-handle" );
+	 var handle_2 = $( "#custom-handle_2" );
+    $( "#slider-range" ).slider({
+      range: true,
+      min: 0,
+      max: 1000,
+      values: [ 75, 300 ],
+			create: function() {
+        handle.append($("<span/>").text( $( this ).slider( "values", 0 ) ));
+				handle_2.append($("<span/>").text( $( this ).slider( "values", 1 ) ));
+      },
+			slide: function( event, ui ) {
+        $( "#custom-handle span" ).text( ui.values[0]);
+				 $( "#custom-handle_2 span" ).text( ui.values[1]);
+      }
+    });
 });
+}
 
-$('#price-min').change(function(event) {
-	var minValue = $('#price-min').val();
-	var maxValue = $('#price-max').val();
-	if ( minValue <= maxValue) {
-		$('#price-range').slider("values", 0, minValue);
-	} else {
-		$('#price-range').slider("values", 0, maxValue);
-		$('#price-min').val(maxValue);
-	}
-});
-// This isn't very DRY but it's just for demo purpose... oh well.
-$('#price-max').change(function(event) {
-	var minValue = $('#price-min').val();
-	var maxValue = $('#price-max').val();
-	if ( maxValue >= minValue) {
-		$('#price-range').slider("values", 1, maxValue);
-	} else {
-		$('#price-range').slider("values", 1, minValue);
-		$('#price-max').val(minValue);
-	}
-});
-}	
 
 $(document).ready(function(){
 	isotope_init();

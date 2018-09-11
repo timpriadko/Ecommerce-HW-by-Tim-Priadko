@@ -1,10 +1,9 @@
 .modal-content {
 	background-color: $primary;
 	color: #fff;
-	margin-top: 40%;
-	right: 20%;
-	height: 50vh;
-	width: 40vw;
+		@media (min-width: 768px) {
+			width: 60vw;
+		}
 	.close {
 		display: flex;
     	justify-content: flex-end;
@@ -20,7 +19,13 @@
 	}
 	
 	.modal-body {
-		padding: 0 25%;
+		padding: 0 20% 20% 20%;
+			button + button {
+				margin-top: 10px;
+				@media (min-width: 576px) {
+					margin-top: 0px;
+				}
+			}
 		a {
 			font-size: 18px;
 			color: #fff;

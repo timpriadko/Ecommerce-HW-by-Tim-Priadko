@@ -24,8 +24,6 @@ p:last-of-type {
 	padding-left: 0;
 	margin-bottom: 0;
 	li {
-		font-size: 0.9375rem;
-		color: $dark;
 		& + li {
 			margin-top: 15px;
 		}
@@ -33,5 +31,46 @@ p:last-of-type {
 			float: right;
 			color: $cyan;
 		}
+		&:before {
+			font-family: fontawesome;
+			content: '\f105';
+			padding-right: 10px;
+			color: $primary;
+		}
 	}
+}
+
+.inline-list {
+	list-style: none;
+	padding-left: 0;
+	margin-bottom: 0;
+}
+
+@mixin social-button-colors($color_1, $color_2){
+	color: $color_1;
+	background-color: $color_2;
+	&:hover {
+		color: $color_2;
+		background-color: $color_1;
+	}
+}
+
+.btn-social-color {
+		&[class*="facebook"]{
+			@include social-button-colors($white , $facebook);
+		}
+		&[class*="twitter"]{
+			@include social-button-colors($white , $twitter);
+		}
+		&[class*="linkedin"]{
+			@include social-button-colors($white , $linkedin);
+		}
+		&[class*="pinterest"]{
+			@include social-button-colors($white , $pinterest);
+		}
+}
+
+img {
+	width: 100%;
+	max-width: 100%;
 }
